@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #fbecec;
+            text-align: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .message {
+            font-size: 1.2em;
+            color: #444;
+            margin: 20px auto;
+            max-width: 600px;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            margin-top: 50px;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            width: 90%;
+            max-width: 1200px;
+            flex-wrap: wrap;
+        }
+        .polaroid {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            width: 200px;
+            transform: scale(0.9) rotate(-5deg);
+            transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .polaroid:nth-child(even) {
+            transform: scale(0.9) rotate(5deg);
+        }
+        .polaroid:hover {
+            transform: scale(1.1) rotate(0);
+            box-shadow: 8px 8px 20px rgba(0,0,0,0.4);
+        }
+        .polaroid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .section-text {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 20px;
+            max-width: 800px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            alert("Well, I am not at all artistic as you are. But here's a little something for your special day");
+        };
+    </script>
+</head>
+<body>
+    <h1>Happy Birthday, Aaditi!</h1>
+    <p class="message">Wishing you a day filled with love, joy, and laughter. You are an amazing person, you know it. I hope this year brings you all the happiness you deserve! All the crazy memories and everything that you wish for.💖</p>
+    
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="polaroid"><img src="art1.jpeg" alt="Memory 1"></div>
+            <div class="polaroid"><img src="art2.jpeg" alt="Memory 2"></div>
+            <div class="polaroid"><img src="art3.jpeg" alt="Memory 3"></div>
+            <div class="polaroid"><img src="art4.jpeg" alt="Memory 4"></div>
+        </div>
+        <p class="section-text">I never knew you had so much art in you, I am really surprised and yes those drawings and paitings are really wonderful! I would want you to explore your artistic side even more, would love to see more of these. 💖</p>
+        <div class="gallery">
+            <div class="polaroid"><img src="aa1.jpeg" alt="Memory 5"></div>
+            <div class="polaroid"><img src="aa2.jpeg" alt="Memory 6"></div>
+            <div class="polaroid"><img src="aa3.jpeg" alt="Memory 7"></div>
+            <div class="polaroid"><img src="aa4.jpeg" alt="Memory 8"></div>
+            <div class="polaroid"><img src="aa5.jpeg" alt="Memory 9"></div>
+            <div class="polaroid"><img src="aa6.jpeg" alt="Memory 10"></div>
+        </div>
+        <p class="section-text">And ofcourse more of these too! Hope you have a great day and a great year ahead! and I hope we make more memories together. 🎉🎈</p>
+        <p>It's not a lot I know, just a little something.</p>
+    </div>
+    <footer style="margin-top: 50px; padding: 10px; background: #d63384; color: white; font-size: 1em;">
+        © 2024 Rigveda. All rights reserved.
+    </footer>
+
+</body>
+</html>
